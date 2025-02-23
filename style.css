@@ -1,0 +1,215 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Outfit:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Outfit:wght@100..900&family=Young+Serif&display=swap');
+
+/* CSS Variables for easy customization */
+:root {
+    /* Colors */
+    --bg-color: hsl(330, 100%, 96%);
+    --white: hsl(0, 0%, 100%);
+    --text-dark: hsl(24, 5%, 18%);
+    --text-medium: hsl(30, 10%, 34%);
+    --highlight-color: hsl(14, 45%, 36%);
+    --prep-bg: hsl(330, 100%, 98%);
+    --prep-text: hsl(332, 51%, 32%);
+    --link-color: hsl(228, 45%, 44%);
+    
+    /* Typography */
+    --font-primary: "Outfit", sans-serif;
+    --font-secondary: "Young Serif", serif;
+    
+    /* Spacing */
+    --border-radius: 10px;
+    --padding: 20px;
+}
+
+/* CSS RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}  
+
+/* GENERAL STYLES */
+body {
+    background-color: var(--bg-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: var(--padding);
+}
+
+/* Recipe Container */
+.recipe {
+    width: 100%;
+    max-width: 520px;
+    background-color: var(--white);
+    padding: var(--padding);
+    text-align: left;
+    border-radius: var(--border-radius);
+}
+
+/* Recipe Image */
+.recipe__image {
+    width: 100%;
+    border-radius: var(--border-radius);
+    display: block;
+}
+
+/* Recipe Title */
+.recipe__title {
+    font-size: 1.5rem;
+    font-family: var(--font-secondary);
+    font-weight: 400;
+    margin: 15px 0;
+    color: var(--text-dark);
+}
+
+/* Recipe Description */
+.recipe__description {
+    font-family: var(--font-primary);
+    font-weight: 400;
+    font-size: 0.75rem;
+    color: var(--text-medium);
+}
+
+/* Preparation Time Section */
+.recipe__prep-time {
+    background-color: var(--prep-bg);
+    padding: var(--padding);
+    border-radius: var(--border-radius);
+    font-family: var(--font-primary);
+    font-weight: 400;
+    margin: 30px 0;
+    line-height: 2;
+}
+
+.recipe__prep-time-p {
+    color: var(--prep-text);
+    font-size: 0.85rem;
+}
+
+.recipe__prep-list {
+    font-size: 0.75rem;
+    margin-left: 20px;
+    color: var(--text-medium);
+}
+
+.recipe__prep-list li {
+    padding-left: 10px;
+}
+
+.recipe__prep-list li::marker {
+    color: var(--prep-text);
+}
+
+/* Subtitles */
+.recipe__subtitle {
+    font-size: 1.25rem;
+    font-family: var(--font-secondary);
+    color: var(--highlight-color);
+    font-weight: 400;
+}
+
+/* Ingredients List */
+.recipe__ingredients-list {
+    font-family: var(--font-primary);
+    font-size: 0.75rem;
+    line-height: 2;
+    margin: 20px 0;
+    margin-left: 20px;
+    color: var(--text-medium);
+    font-weight: 400;
+}
+
+.recipe__ingredients-list li {
+    padding-left: 10px;
+}
+
+.recipe__ingredients-list li::marker {
+    color: var(--highlight-color);
+    list-style-type: square;
+}
+
+/* Divider Line */
+hr {
+    opacity: 0.3;
+    margin-bottom: 20px;
+}
+
+/* Instructions List */
+.recipe__instructions-list {
+    font-family: var(--font-primary);
+    margin: 20px 0;
+    margin-left: 20px;
+    line-height: 1.5;
+    font-size: 0.75rem;
+    color: var(--text-medium);
+}
+
+.recipe__instructions-list li {
+    padding-left: 10px;
+}
+
+.recipe__instructions-list li::marker {
+    color: var(--highlight-color);
+}
+
+/* Nutrition Paragraph */
+.recipe__nutrition-p {
+    margin: 15px 0;
+    font-size: 0.75rem;
+    color: var(--text-medium);
+    font-weight: 400;
+    font-family: var(--font-primary);
+}
+
+/* Nutrition Table */
+.recipe__nutrition-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: var(--font-primary);
+    font-weight: 400;
+}
+
+.recipe__nutrition-table td {
+    padding: 10px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+/* Removes border for last row */
+.recipe__nutrition-table tr:last-child td {
+    border-bottom: none;
+}
+
+/* First column: Bold and left-aligned */
+.recipe__nutrition-table td:first-child {
+    font-weight: 400;
+    text-align: left;
+    color: var(--text-medium);
+}
+
+/* Second column: Right-aligned */
+.recipe__nutrition-table td:nth-child(2) {
+    text-align: left;
+    color: var(--highlight-color);
+    font-weight: 800;
+}
+
+/* Attribution */
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+    margin-top: 10px;
+}
+
+.attribution a { 
+    color: var(--link-color);
+    text-decoration: none; 
+}
+
+.attribution a:hover, .attribution a:focus {
+    text-decoration: underline;
+}
