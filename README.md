@@ -18,12 +18,12 @@ This is a solution to the [Recipe Page Challenge](https://www.frontendmentor.io/
 
 ### Screenshot
 
-![Screenshot of my solution](./screenshot.jpg)
+![Screenshot of my solution](./assets/images/screenshot.png)
 
 ### Links
 
-- **Solution URL:** [Frontend Mentor](https://your-solution-url.com)
-- **Live Site URL:** [Live Demo](https://your-live-site-url.com)
+- **Solution URL:** [Frontend Mentor](https://www.frontendmentor.io/solutions/recipe-page-using-html5-semantics-and-css-flexbox-0qaokwlElK)
+- **Live Site URL:** [Live Demo](https://recipe-page-livid-nine.vercel.app/)
 
 ## My Process
 
@@ -44,7 +44,7 @@ One key takeaway from this project was styling lists using **custom bullets with
 
 ### Continued development
 
-In future projects, I’d like to:
+In future projects I’d like to:
 
 - Improve CSS animations & transitions for better UX.
 
@@ -54,11 +54,11 @@ In future projects, I’d like to:
 
 ## Author
 
-- Website - [Amiko Elvis](https://www.your-site.com)
+- Website - [Amiko Elvis](https://recipe-page-livid-nine.vercel.app/)
 - Frontend Mentor - [@amikoelvis](https://www.frontendmentor.io/profile/amikoelvis)
 - Twitter - [@ElvisAmiko](https://www.twitter.com/ElvisAmiko)
 
 ## Acknowledgments
 
-A big thank you goes to Frontend Mentor for this challenge.
+Thank you Frontend Mentor for this challenge.
 ```

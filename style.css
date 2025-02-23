@@ -172,6 +172,7 @@ hr {
     border-collapse: collapse;
     font-family: var(--font-primary);
     font-weight: 400;
+    font-size: 0.75rem;
 }
 
 .recipe__nutrition-table td {
@@ -203,6 +204,7 @@ hr {
     font-size: 11px; 
     text-align: center; 
     margin-top: 10px;
+    font-family: var(--font-primary);
 }
 
 .attribution a { 
